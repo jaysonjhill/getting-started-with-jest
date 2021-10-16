@@ -7,22 +7,32 @@
     "test": "jest"
   },
   "jest": {
-    "collectCoverage": true,
-    "coverageReporters": ["html", "text"]
+    "coverageReporters": [
+      "text"
+    ],
+    "reporters": [
+      "default",
+      "jest-junit"
+    ]
+  },
+  "jest-junit": {
+    "outputFile": "output/coverage/junit/junit.xml",
+    "usePathForSuiteName": "true"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/valentinogagliardi/getting-started-with-jest.git"
+    "url": "git+https://github.com/jaysonjhill/getting-started-with-jest.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/valentinogagliardi/getting-started-with-jest/issues"
+    "url": "https://github.com/jaysonjhill/getting-started-with-jest/issues"
   },
-  "homepage": "https://github.com/valentinogagliardi/getting-started-with-jest#readme",
+  "homepage": "https://github.com/jaysonjhill/getting-started-with-jest#readme",
   "devDependencies": {
-    "jest": "^24.9.0",
+    "jest": "^27.2.5",
+    "jest-junit": "^13.0.0",
     "prettier": "^1.18.2"
   }
 }
